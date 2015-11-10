@@ -1,0 +1,8 @@
+RewriteEngine On
+# Redirect any request to include files should trigger Error 404
+RewriteRule ^(.*)\.inc$ ./?page=404&%{QUERY_STRING} [L]
+RewriteRule ^(.*)\.md$ ./?page=404&%{QUERY_STRING} [L]
+# Redirect all request to any file to the Index Router
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ ./index.php?page=$1&%{QUERY_STRING} [B]

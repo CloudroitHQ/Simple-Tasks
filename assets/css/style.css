@@ -1,0 +1,39 @@
+/* Fonts */
+body, input, select, button {font-family: 'Open Sans', 'Segoe UI', Tahoma, Verdana, sans-serif;}
+body {font-size: 10pt; background-color: #eef;}
+pre, code, textarea, tt {font-family: 'Monaco B2', 'Monaco', 'Consolas', 'Courier New', Courier, monospace;}
+
+/* General Layout */
+/** {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}*/
+.wrap {width: 90%; margin: auto; overflow: hidden;}
+
+/* Buttons */
+.btn {display: inline-block; border: 1px solid #fff; border-radius: 2px; padding: 5px 10px; text-decoration: none; color: #fff; margin: 5px;}
+.btn:hover {background-color: rgba(255,255,255,0.25);}
+
+/* Header */
+header {background: url("/assets/img/bg.png") center center repeat #37474f;}
+.heading {border-bottom: 1px solid rgba(0,0,0,0.1); background-color: rgba(0,0,0,0.1);}
+.heading h1 {font-size: 2em; line-height: 2.5; text-align: center;}
+.heading h1 a {text-decoration: none; color: #fff; font-weight: 300; text-shadow: 1px 1px 2px rgba(0,0,0,0.75);}
+
+/* Intro */
+.intro {border-top: 1px solid rgba(255,255,255,0.1);}
+.intro p {margin: 25px 0; color: #fff; text-align: center;}
+
+/* Tasks */
+.tasks {position: absolute; bottom: 10px; left: 10px; top: 200px; right: 10px; border: 1px solid #999; border-radius: 5px; padding: 15px;}
+.tasks .tasks-columns {height: 100%;}
+.tasks article {background-color: rgba(0,0,0,0.1); display: block; margin: 5px; border-radius: 5px; position: relative;}
+.tasks article h3 {text-align: center; font-size: 1.5em; font-weight: 300;}
+.tasks article h3 strong {display: block; line-height: 1.5;}
+.tasks article h3 span {font-size: 0.8em; line-height: 1; color: #666;}
+.tasks article ul {position: absolute; top: 65px; left: 0; right: 0; bottom: 0; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+.tasks article ul li {padding: 5px; margin: 5px; border-radius: 3px; cursor: pointer; font-weight: normal; border-right: 10px solid #ccc;}
+.tasks article ul li input {display: block; background: transparent; border: 0; width: 100%;}
+.tasks article ul li input:focus {outline: none;}
+.tasks article ul li.ui-state-highlight {height: 1.5em !important;}
+
+/* Flex Box */
+.flex-container {display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-align-content: flex-start; -ms-flex-line-pack: start; align-content: flex-start; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch;}
+.flex-item {-webkit-order: 1; -ms-flex-order: 1; order: 1; -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto; -webkit-align-self: auto; -ms-flex-item-align: auto; align-self: auto;}
